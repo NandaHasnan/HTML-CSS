@@ -1,0 +1,891 @@
+body {
+    font-family: 'Mulish', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    height: 40px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: -10%;
+    margin-top: -30px;
+}
+
+.logo ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-left: 50px;
+}
+
+.logo li {
+    margin-right: 50px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.sign-up {
+    margin-top: -30px;
+}
+
+.sign-up button {
+    background-color: #6343e4;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: -200px;
+}
+
+/* Hamburger button styles */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 0;
+}
+
+
+
+
+/* Main */
+main {
+    padding: 20px;
+}
+
+/* Hero */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px ;
+}
+
+.hero-content {
+    flex: 1;
+    margin-right: 40px;
+}
+
+.hero-content h2 {
+    font-size: 78px;
+    font-weight: 700;
+    line-height: 70.28px;
+    text-align: left;
+    color: #5F2EEA;
+    margin-top: 0px;
+    margin-left: -100px;
+}
+
+.hero-content p {
+    color: #A0A3BD;
+    margin-bottom: 0px;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 70.28px;
+    text-align: left;
+    margin-left: -97px;
+}
+
+.hero-image img {
+    width: 600px;
+    height: auto;
+    margin-right: -170px;
+}
+
+/* Now Showing */
+.now-showing {
+    margin-top: 40px;
+    background-color: #F5F6F8;
+    max-width: 1900px;
+    padding: 5%;
+    
+}
+
+.now-showing .hero2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.now-showing .hero2 h2 {
+    font-size: 24px;
+    color: #5c3fef;
+    position: relative;
+}
+
+.now-showing .hero2 h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #5c3fef;
+    position: absolute;
+    left: 30%;
+    bottom: -5px;
+}
+
+.now-showing .view-all {
+    color: #5c3fef;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.movies-grid {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1.2rem;    
+    margin-top: 1%;
+    
+}
+
+
+
+.movie-img {
+    background-color: #F5F6F8;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s ease;
+    display: flex;
+    position: relative;
+}
+
+
+
+.movie-img img {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+}
+
+.slider-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.movies-grid {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider-wrapper {
+    overflow: hidden;
+    position: relative;
+}
+
+.movies-grid {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: max-content; /* Agar grid hanya selebar jumlah elemen di dalamnya */
+}
+
+/* Swiper class */
+.slider-wrapper .slider-button-prev,
+.slider-wrapper .slider-button-next {
+    position: absolute;
+    top: 155px;
+    transform: translateY(-50%);
+    background-color: #F5F6F8;
+    border: none;
+    color: #5c3fef;
+    padding: 10px;
+    height: 95%;
+    cursor: pointer;
+    z-index: 10;
+    
+}
+
+.slider-wrapper .slider-button-prev {
+    left: 0px;
+}
+
+.slider-wrapper .slider-button-next {
+    right: 0px;
+    
+}
+
+.slider-wrapper .slider-button-prev i,
+.slider-wrapper .slider-button-next i {
+    font-size: 24px;
+    
+}
+
+.movies-grid .movie-img {
+    flex: 0 0 auto; /* Untuk memastikan elemen tidak menyusut */
+    width: 200px; /* Sesuaikan dengan kebutuhan */
+    margin-right: 10px;
+}
+
+
+
+/* Hero3 */
+.upcoming-movies {
+    max-width: 1900px;
+    padding: 5%;
+    margin-top: -3%;
+}
+
+.hero3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    
+}
+
+.hero3 h2 {
+    font-size: 24px;
+    color: #5c3fef;
+    position: relative;
+    margin-left: 3%;
+}
+
+.upcoming-movies .hero3 h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #5c3fef;
+    position: absolute;
+    left: 30%;
+    bottom: -9px;
+}
+
+.hero3 .view-all {
+    color: #5c3fef;
+    text-decoration: none;
+    font-size: 14px;
+    margin-right: 4%;
+}
+
+/* Month Tabs */
+.month-tabs {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    
+    white-space: nowrap; /* Mencegah tombol melampaui batas */
+    padding: 0 16%;
+    scroll-behavior: smooth; /* Untuk transisi yang lebih halus saat di scroll */
+}
+
+.month-tabs button {
+    background-color: #fff;
+    border: 1px solid #6343e4;
+    color: #6343e4;
+    padding: 10px 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    flex-shrink: 0; /* Memastikan tombol tidak menyusut */
+}
+
+/* Tombol aktif */
+.movies-grid2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    
+}
+
+
+
+.movie-img2 {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+.movie-img2 img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.movie-card h3 {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.movie-card p {
+    color: #A0A3BD;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.details-btn {
+    background-color: #fff;
+    border: 1px solid #6343e4;
+    color: #6343e4;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.details-btn:hover {
+    background-color: #6343e4;
+    color: #fff;
+}
+
+.slider-wrapper2 {
+    position: relative;
+    overflow: hidden;
+}
+
+.movies-grid2 {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider-wrapper2 {
+    overflow: hidden;
+    position: relative;
+}
+
+.movies-grid2 {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: max-content; /* Agar grid hanya selebar jumlah elemen di dalamnya */
+}
+
+/* Swiper class */
+.slider-wrapper2 .slider-button-prev2,
+.slider-wrapper2 .slider-button-next2 {
+    position: absolute;
+    top: 200px;
+    transform: translateY(-50%);
+    background-color: #ffffff;
+    height: 500px;
+    border: none;
+    color: #5c3fef;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    
+}
+
+.slider-wrapper2 .slider-button-prev2 {
+    left: 0px;
+}
+
+.slider-wrapper2 .slider-button-next2 {
+    right: 0px;
+}
+
+.slider-wrapper2 .slider-button-prev2 i,
+.slider-wrapper2 .slider-button-next2 i {
+    font-size: 24px;
+    
+}
+
+.movies-grid2 .movie-img2 {
+    flex: 0 0 auto; /* Untuk memastikan elemen tidak menyusut */
+    width: 200px; /* Sesuaikan dengan kebutuhan */
+    margin-right: 10px;
+}
+
+/* signup */
+.signup-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+    margin-top: -10%;
+    padding: 20px; /* Tambahkan padding agar lebih nyaman di layar kecil */
+}
+
+.signup-container {
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Style untuk judul dan teks */
+.signup-container .tittle {
+    font-size: 24px;
+    color: #4E4B66;
+    margin-bottom: 10px; /* Menambahkan margin bawah */
+}
+
+.signup-container .highlight {
+    color: #6343e4;
+    font-size: 36px;
+    margin-top: -2%;
+}
+
+/* Style untuk form */
+.signup-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+    margin-top: -10%;
+    padding: 0 20px; /* Tambahkan padding untuk memberikan ruang pada tampilan mobile */
+}
+
+.signup-container {
+    background-color: #fff;
+    padding: 50px; /* Kurangi padding untuk tampilan yang lebih kompak */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    width: 100%;
+    text-align: center;
+}
+
+.signup-container .tittle {
+    font-size: 26px;
+    color: #4E4B66;
+}
+
+.signup-container .highlight {
+    color: #6343e4;
+    font-size: 48px;
+    margin-top: -2%;
+}
+
+.signup-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    
+}
+
+.signup-form input[type="email"] {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px; /* Sesuaikan border-radius */
+    font-size: 14px;
+    flex: 1;
+    min-width: 0; /* Mengatasi masalah lebar pada flexbox */
+    margin-right: 2%;
+    margin-left: 23%;
+}
+
+.signup-form button {
+    background-color: #6343e4;
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px; /* Sesuaikan border-radius */
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    margin-right: 25%;
+    
+}
+
+.signup-form button:hover {
+    background-color: #5329c8;
+}
+
+.signup-text {
+    color: #A0A3BD;
+    font-size: 14px;
+}
+
+/* footer */
+footer {
+    background-color: #f8f8f8;
+    padding: 40px 20px;
+    font-family: 'Mulish', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    flex: 1 1 200px;
+    margin-right: 50px;
+}
+
+.footer-logo img {
+    width: 184px;
+    height: 71px;
+    margin-left: -50px;
+}
+
+.footer-logo p {
+    font-size: 20px;
+    color: #555;
+    margin-top: 10px;
+    margin-left: -50px;
+}
+
+.footer-links, .footer-sponsor, .footer-follow {
+    flex: 1 1 150px;
+}
+
+.footer-links h2, .footer-sponsor h2, .footer-follow h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.footer-links ul, .footer-sponsor ul, .footer-follow ul {
+    list-style: none;
+}
+
+.footer-links ul li, .footer-sponsor ul li, .footer-follow ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #555;
+    margin-left: -40px;
+}
+
+.footer-follow img {
+    margin-right: 10px;
+    margin-left: -5px;
+}
+
+.footer-follow ul li {
+    margin-right: 10px;
+}
+
+.footer-follow ul li:nth-child(1) a {
+    color: #6E7191; /* Facebook */
+}
+
+.footer-follow ul li:nth-child(2) a {
+    color: #6E7191; /* Instagram */
+}
+
+.footer-follow ul li:nth-child(3) a {
+    color: #6E7191; /* Twitter */
+}
+
+.footer-follow ul li:nth-child(4) a {
+    color: #6E7191; /* YouTube */
+}
+
+.footer-links a, .footer-follow a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #777;
+}
+
+.open-menu {
+    display: none;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    /* header navbar*/
+    nav {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .open-menu {
+        display: block;
+    }
+
+    .logo {
+        margin-left: 0;
+        margin-bottom: 20px;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .logo ul {
+        display: none;
+    }
+
+    .sign-up {
+        display: none;
+    }
+
+
+    /* hero */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .hero-content h2 {
+        font-size: 48px;
+        line-height: 50px;
+        margin-left: 0;
+    }
+
+    .hero-content p {
+        font-size: 24px;
+        line-height: 30px;
+        margin-left: 0;
+    }
+
+    .hero-image img {
+        width: 100%;
+        max-width: 500px;
+        margin-right: 0;
+    }
+
+    /* movie */
+    .slider-wrapper .slider-button-prev,
+    .slider-wrapper .slider-button-next {
+        top: 145px;
+        height: 100%;
+    }
+
+    
+
+    .slider-wrapper .slider-button-prev i,
+    .slider-wrapper .slider-button-next i {
+        font-size: 20px;
+        
+    }
+
+    
+    /* list movie */
+    .month-tabs {
+        padding: 0 10px; /* Mengurangi padding untuk tablet */
+        overflow-x: auto; /* Menambahkan scroll horizontal */
+    }
+
+    .month-tabs button {
+        padding: 8px 16px;
+        font-size: 13px;
+    }
+
+    .movie-card2 {
+        min-width: 100%;
+    }
+
+   
+
+    /* join now */
+    
+
+    /* footer */
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-links ul li{
+        margin-right: 40px;
+    }
+
+    .footer-sponsor ul li {
+        margin-right: 40px;
+    }
+
+    .footer-logo, .footer-links, .footer-sponsor, .footer-follow {
+        flex: 1 1 100%;
+        margin: 20px 0;
+        text-align: center;
+        margin-right: 5px;
+    }
+
+    .footer-logo img {
+        margin: 0;
+    }
+
+    .footer-logo p, 
+    .footer-links ul li, 
+    .footer-sponsor ul li, 
+    .footer-follow ul li {
+        margin-left: 0;
+        font-size: 16px;
+    }
+
+    .footer-follow ul {
+        padding: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    /* header navbar */
+    .logo {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo ul {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .logo li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .sign-up {
+        justify-content: center;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .sign-up button {
+        width: 100%;
+        max-width: 200px;
+        display: none;
+    }
+
+    .hamburger {
+        margin-right: 10px;
+    }
+
+    /* hero */
+    .hero-content h2 {
+        font-size: 36px;
+        line-height: 40px;
+    }
+
+    .hero-content p {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .hero-image img {
+        max-width: 400px;
+    }
+
+    .movies-grid .movie-img {
+        width: 120px;
+    }
+
+    .slider-button-prev i,
+    .slider-button-next i {
+        font-size: 16px;
+    }
+
+    .slider-wrapper .slider-button-prev,
+    .slider-wrapper .slider-button-next {
+        top: 99px;
+    }
+
+    /* month tab */
+    .month-tabs {
+        padding: 0 5px; /* Mengurangi padding lebih banyak untuk mobile */
+    }
+
+    .month-tabs button {
+        padding: 6px 12px;
+        font-size: 12px;
+        margin-right: 5px; /* Mengurangi margin untuk mobile */
+    }
+
+    .movie-card {
+        width: 120px;
+    }
+
+    .slider-button-prev2,
+    .slider-button-next2 {
+        font-size: 16px;
+        padding: 5px;
+    }
+
+    /* footer */
+    footer {
+        padding: 20px 10px;
+    }
+
+    .footer-logo {
+        margin-right: 7px;
+    }
+
+    .footer-logo img {
+        font-size: 20px;
+        
+    }
+
+    .footer-logo p {
+        font-size: 12px;
+    }
+
+    .footer-links h2,
+    .footer-sponsor h2,
+    .footer-follow h2 {
+        font-size: 16px;
+    }
+
+    .footer-links ul li,
+    .footer-sponsor ul li,
+    .footer-follow ul li {
+        font-size: 12px;
+    }
+
+    .footer-bottom {
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .movie-card {
+        min-width: 50%;
+    }
+}

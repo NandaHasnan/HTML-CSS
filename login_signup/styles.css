@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.signup-image {
+    flex: 1;
+    background-color: #000;
+}
+
+.signup-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.signup-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px;
+    max-width: 500px;
+    background-color: #fff;
+}
+
+.signup-form h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.signup-form p {
+    font-size: 1rem;
+    margin-bottom: 25px;
+    color: #aaaaaa;
+}
+
+
+
+.form-group {
+    margin-bottom: 20px;
+    width: 400px;
+    height: 97px;
+    top: 251px;
+    left: 883px;
+    gap: 0px;
+    opacity: 0px;
+
+}
+
+.form-group label {
+    color: #4E4B66;
+
+   
+}
+
+.form-group :placeholder-shown {
+    color: #dedede;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #dedede;
+    border-radius: 15px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.eye-icon {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+button[type="submit"] {
+    background-color: #5f2eea;
+    color: #fff;
+    padding: 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 700;
+    transition: background-color 0.3s;
+    width: 100%;
+    margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+    background-color: #4522c7;
+}
+
+
+a {
+    color: #6200ee;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.signin {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.signup {
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .signup-image {
+        display: none;
+    }
+
+    .signup-form {
+        padding: 30px;
+    }
+}
