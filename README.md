@@ -10,17 +10,19 @@ The homepage displays currently showing and upcoming movies with an attractive d
 - "Now Showing" and "Upcoming Movies" sections with a slider to navigate through movie posters.
 - A sign-up section for users to join Tickitz and receive movie updates.
 - A responsive design for better user experience across devices.
-
+![home](https://github.com/user-attachments/assets/48648a62-0693-4c63-a01f-1b72701d9dde)
 ### 2. **Sign In Page (`sign-in.html`)**
 The **Sign In** page allows users to log in to their registered accounts. Key features include:
 - A form to input email and password.
 - A link to reset the password if forgotten.
 - A link to the **Sign Up** page for users who do not have an account.
+![signin](https://github.com/user-attachments/assets/eeb1e5db-10ad-4749-a4c8-21f9172185f3)
 
 ### 3. **Sign Up Page (`sign-up.html`)**
 The **Sign Up** page allows new users to create an account by filling in additional details. Key features include:
 - A form to input first name, last name, phone number, email, and password.
 - A link to the **Sign In** page for users who already have an account.
+![signup](https://github.com/user-attachments/assets/15346b91-df21-47bb-8b5e-175dceadbd3c)
 
 ## Installation
 To run this project locally:
