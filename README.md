@@ -35,11 +35,5 @@ To run this project locally:
 - **Sign In**: Enter email and password to log in to an existing account.
 - **Sign Up**: Create a new account by filling in the sign-up form.
 
-## Files
-- `home.html`: The main structure of the homepage, including movie listings, the hero section, and the footer.
-- `styles.css`: The stylesheet for the homepage, providing layout, colors, and responsiveness.
-- `sign-in.html`: The page for registered users to log in.
-- `sign-up.html`: The page for new users to create an account.
-
 ## Contributors
 - **NandaHasnan** - Developer
